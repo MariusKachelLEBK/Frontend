@@ -128,12 +128,7 @@ export class PlaceteamWebSocket {
                 console.log('[close] Connection died');
 
                 // Attempt reconnection after a few seconds
-                setTimeout(
-                    function() {
-                    _self.Init();
-                    },
-                    5000
-                );
+                setTimeout(function() {_self.Init();}, 5000);
             }
         };
         //
